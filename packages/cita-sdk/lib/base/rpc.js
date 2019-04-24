@@ -234,3 +234,18 @@ exports.getVersion = {
     call: 'getVersion',
     params: 0
 };
+exports.estimateGas = {
+    name: 'estimateGas',
+    call: 'estimateGas',
+    params: 2,
+    inputFormatter: [
+        formatters.inputCallFormatter,
+        formatters.inputDefaultBlockNumberFormatter
+    ],
+    outputFormatter: utils.hexToNumber
+};
+exports.getTransactionReceiptEx = {
+    name: 'getTransactionReceiptEx',
+    call: 'getTransactionReceiptEx',
+    params: 1
+};

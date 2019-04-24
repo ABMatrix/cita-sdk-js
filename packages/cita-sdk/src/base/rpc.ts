@@ -250,3 +250,25 @@ export const getVersion = {
   call: 'getVersion',
   params: 0
 }
+
+
+
+//ABOS
+
+export const estimateGas = {
+  name: 'estimateGas',
+  call: 'estimateGas',
+  params: 2,
+  inputFormatter: [
+      formatters.inputCallFormatter,
+      formatters.inputDefaultBlockNumberFormatter
+  ],
+  outputFormatter: utils.hexToNumber
+};
+
+export const getTransactionReceiptEx = {
+  name: 'getTransactionReceiptEx',
+  call: 'getTransactionReceiptEx',
+  params: 1
+};
+

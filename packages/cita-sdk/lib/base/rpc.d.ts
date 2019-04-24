@@ -195,3 +195,15 @@ export declare const getVersion: {
     call: string;
     params: number;
 };
+export declare const estimateGas: {
+    name: string;
+    call: string;
+    params: number;
+    inputFormatter: any[];
+    outputFormatter: any;
+};
+export declare const getTransactionReceiptEx: {
+    name: string;
+    call: string;
+    params: number;
+};

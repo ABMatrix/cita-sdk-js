@@ -45,6 +45,8 @@ export default (web3: EnhancedWeb3) => {
       rpc.getFilterChanges,
       rpc.deleteMessageFilter,
       rpc.getLogs,
+      rpc.estimateGas,
+      rpc.getTransactionReceiptEx,
       personal.getAccounts,
       personal.newAccount,
       // personal.unlockAccount,

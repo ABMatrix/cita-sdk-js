@@ -58,6 +58,8 @@ exports.default = (web3) => {
             rpc.getFilterChanges,
             rpc.deleteMessageFilter,
             rpc.getLogs,
+            rpc.estimateGas,
+            rpc.getTransactionReceiptEx,
             personal.getAccounts,
             personal.newAccount,
             personal.sign,

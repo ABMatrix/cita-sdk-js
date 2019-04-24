@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const actions = [
     'getTransactionReceipt',
+    'getTransactionReceiptEx',
     'getTransaction',
     'getTransactionProof',
     'getFilterChanges'
